@@ -7,6 +7,8 @@ import { ShowTimeComponent } from '../cmps/show-time/show-time.component';
 import { CountDownComponent } from '../cmps/count-down/count-down.component';
 import { ShowCoordsComponent } from '../cmps/show-coords/show-coords.component';
 import { WhoWatchComponent } from '../cmps/who-watch/who-watch.component';
+import { WhoWatchListComponent } from '../cmps/who-watch-list/who-watch-list.component';
+import { WhoWatchPreviewComponent } from '../cmps/who-watch-preview/who-watch-preview.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { WhoWatchComponent } from '../cmps/who-watch/who-watch.component';
     ShowTimeComponent,
     CountDownComponent,
     ShowCoordsComponent,
-    WhoWatchComponent
+    WhoWatchComponent,
+    WhoWatchListComponent,
+    WhoWatchPreviewComponent
   ],
   imports: [
     BrowserModule,
