@@ -12,10 +12,10 @@ export class WhoWatchComponent {
 
   ngOnInit(): void {
     this.users = [
-      { _id: "101", name: "Brian", imgUrl: '../../../assets/imgs/profile-1.png' },
-      { _id: "102", name: "Ofer", imgUrl: '../../../assets/imgs/profile-2.png' },
-      { _id: "103", name: "Dan", imgUrl: '../../../assets/imgs/profile-3.png' },
-      { _id: "104", name: "Gil", imgUrl: '../../../assets/imgs/profile-4.png' },
+      { _id: "101", name: "Brian", imgUrl: '../../../assets/imgs/profile-1.png', movies: ['Harry Potter', 'The hunger game'] },
+      { _id: "102", name: "Ofer", imgUrl: '../../../assets/imgs/profile-2.png', movies: ['Spider-man', 'The hunger game'] },
+      { _id: "103", name: "Dan", imgUrl: '../../../assets/imgs/profile-3.png', movies: ['Harry Potter', 'Fast and Furious'] },
+      { _id: "104", name: "Gil", imgUrl: '../../../assets/imgs/profile-4.png', movies: ['Harry Potter', 'The hunger game'] },
     ]
   }
 
@@ -29,7 +29,7 @@ export class WhoWatchComponent {
     return txt
   }
   makeName() {
-    const names = ['Idan' , 'Ofer', 'Dan', 'Ofek', 'Gal', 'Dor', 'Ben' , 'Dana' , 'Stav', 'Tommy', 'Daniel', 'Noga', 'Sharon','Yonatan']
+    const names = ['Idan', 'Ofer', 'Dan', 'Ofek', 'Gal', 'Dor', 'Ben', 'Dana', 'Stav', 'Tommy', 'Daniel', 'Noga', 'Sharon', 'Yonatan']
     return names[Math.floor(Math.random() * names.length)]
   }
 
@@ -45,8 +45,8 @@ export class WhoWatchComponent {
     const watcherToAdd = {
       _id: this.makeId(),
       name: this.makeName(),
-      imgUrl:`../../../assets/imgs/profile-${this.makeImgUrl()}.png`
-
+      imgUrl: `../../../assets/imgs/profile-${this.makeImgUrl()}.png`,
+      movies:['Harry Potter', 'The hunger game']
     }
     this.users.unshift(watcherToAdd)
   }

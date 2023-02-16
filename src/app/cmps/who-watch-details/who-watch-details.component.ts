@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { User } from 'src/app/modules/user.module';
 
 @Component({
   selector: 'who-watch-details',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./who-watch-details.component.scss']
 })
 export class WhoWatchDetailsComponent {
+  @Input() user !: User
+  @Output() closeModal = new EventEmitter()
+  getMovies() {
+    return this.user.movies.join(', ')
+  }
 
+  onCloseModal() {
+    this.closeModal.emit()
+  }
 }

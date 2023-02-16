@@ -9,14 +9,29 @@ import { User } from 'src/app/modules/user.module';
 export class WhoWatchListComponent {
 
   @Input() users!: User[]
-  @Output() removeUser = new EventEmitter<string>() 
+  @Output() removeUser = new EventEmitter<string>()
+  currUserId = ""
+  currUser: any
 
-  trackByFn(idx: number, item: any) {
+  trackByFn(item: any) {
     return item._id
   }
 
-  onRemoveUser(userId:string){
+  onRemoveUser(userId: string) {
     this.removeUser.emit(userId)
   }
-    // this.removeUser(userId)
+
+  onToggleModal(userId: string) {
+    this.currUserId = userId
+    this.currUser = this.users.find(user => user._id === userId)
+  }
+
+  closeModal() {
+    this.currUserId = ""
+  }
+
+  // getUser(userId: string) {
+  //   console.log(userId)
+  //   return this.users.find(user => user._id === userId)
+  // }
 }
