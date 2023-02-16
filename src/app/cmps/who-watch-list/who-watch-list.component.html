@@ -1,1 +1,6 @@
-<p>who-watch-list works!</p>
+<ul class="who-watch-list">
+    <li *ngFor="let user of users; trackBy: trackByFn">
+        <who-watch-preview [user]="user"></who-watch-preview>
+        <button class="remove-user-btn" (click)="onRemoveUser(user._id)">X</button>
+    </li>
+</ul>

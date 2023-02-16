@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { User } from 'src/app/modules/user.module';
 
 @Component({
   selector: 'who-watch-list',
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class WhoWatchListComponent {
 
+  @Input() users!: User[]
+  @Output() removeUser = new EventEmitter<string>() 
+
+  trackByFn(idx: number, item: any) {
+    return item._id
+  }
+
+  onRemoveUser(userId:string){
+    this.removeUser.emit(userId)
+  }
+    // this.removeUser(userId)
 }
