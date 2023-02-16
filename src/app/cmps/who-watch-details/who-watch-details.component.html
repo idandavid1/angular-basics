@@ -1,1 +1,6 @@
-<p>who-watch-details works!</p>
+<section class="who-watch-details">
+    <h1>{{user.name}}</h1>
+    <img [src]="user.imgUrl" alt="">
+    <h2>Movies {{getMovies()}}</h2>
+    <span class="close-btn" (click)="onCloseModal()">X</span>
+</section>
