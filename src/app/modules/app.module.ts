@@ -9,6 +9,7 @@ import { ShowCoordsComponent } from '../cmps/show-coords/show-coords.component';
 import { WhoWatchComponent } from '../cmps/who-watch/who-watch.component';
 import { WhoWatchListComponent } from '../cmps/who-watch-list/who-watch-list.component';
 import { WhoWatchPreviewComponent } from '../cmps/who-watch-preview/who-watch-preview.component';
+import { WhoWatchDetailsComponent } from '../cmps/who-watch-details/who-watch-details.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { WhoWatchPreviewComponent } from '../cmps/who-watch-preview/who-watch-pr
     ShowCoordsComponent,
     WhoWatchComponent,
     WhoWatchListComponent,
-    WhoWatchPreviewComponent
+    WhoWatchPreviewComponent,
+    WhoWatchDetailsComponent
   ],
   imports: [
     BrowserModule,
