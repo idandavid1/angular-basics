@@ -1,0 +1,8 @@
+<section class="count-down">
+  <h2>COUNTDOWN</h2>
+  <div>
+    <span>{{time | date: 'mm'}}</span>
+    :
+    <span [ngClass]="getClassList()">{{time | date: 'ss'}}</span>
+  </div>
+</section>
