@@ -7,8 +7,12 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'angular-basics';
   countDown = Date.now() + 7 * 1000
+  isWatchPage = false
+
+  toggleWatchPage() {
+    this.isWatchPage =!this.isWatchPage
+  }
 
   playAudio(){
     let audio = new Audio()
