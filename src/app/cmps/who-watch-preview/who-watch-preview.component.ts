@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { User } from 'src/app/modules/user.module';
 
 @Component({
   selector: 'who-watch-preview',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./who-watch-preview.component.scss']
 })
 export class WhoWatchPreviewComponent {
-
+  @Input() user!: User;
 }

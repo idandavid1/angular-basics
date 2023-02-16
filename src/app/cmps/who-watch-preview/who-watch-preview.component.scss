@@ -1,0 +1,26 @@
+.who-watch-preview {
+    background-color: white;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    transition: transform .2s;
+    position: relative;
+    justify-content: center;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+
+    span {
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    .user-content {
+        justify-content: space-around;
+        padding: 20px 0;
+        align-items: center;
+        height: 100%;
+    }
+}
