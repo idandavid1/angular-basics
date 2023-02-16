@@ -1,0 +1,5 @@
+<section [class]="getClassList()" (click)="toggleIsDark()">
+  <img src={{getImgUrl()}} alt="">
+  <!-- <img [src]="getImgUrl()" alt=""> -->
+  <div>{{time | date:'HH:mm:ss a'}}</div>
+</section>
