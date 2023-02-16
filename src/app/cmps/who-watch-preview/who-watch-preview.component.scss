@@ -1,11 +1,12 @@
 .who-watch-preview {
-    background-color: white;
+    background-color: rgb(88, 204, 215);
     width: 250px;
     display: flex;
     flex-direction: column;
     transition: transform .2s;
     position: relative;
     justify-content: center;
+    text-align: center;
 
     &:hover {
         transform: scale(1.02);

@@ -1,5 +1,5 @@
 .show-time {
-  background-color: aqua;
+  background-color: rgb(136, 220, 241);
   border: 1px solid black;
   height: 200px;
   width: 200px;
@@ -12,7 +12,7 @@
   cursor: pointer;
 
   &.dark {
-    background-color: darkblue;
+    background-color: rgb(18, 18, 80);
     color: aliceblue;
   }
 }

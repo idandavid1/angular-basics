@@ -2,8 +2,8 @@
     <li *ngFor="let user of users; trackBy: trackByFn">
         <div (click)="onToggleModal(user._id)">
             <who-watch-preview [user]="user"></who-watch-preview>
-            <button class="remove-user-btn" (click)="onRemoveUser(user._id)">X</button>
         </div>
+        <span class="remove-user-btn" (click)="onRemoveUser(user._id)">X</span>
     </li>
 
     <who-watch-details *ngIf="currUserId" [user]="currUser" (closeModal)="closeModal()"></who-watch-details>

@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  isWatchPage = false
+  isWatchPage = true
 
   toggleWatchPage() {
     this.isWatchPage =!this.isWatchPage

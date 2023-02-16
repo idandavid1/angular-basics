@@ -1,4 +1,4 @@
 <section class="who-watch">
-    <button (click)="onAddWatcher()">Add Watcher</button>
+    <button class="add-btn" (click)="onAddWatcher()">Add Watcher</button>
     <who-watch-list (removeUser)="removeUser($event)" [users]="users"></who-watch-list>
 </section>
