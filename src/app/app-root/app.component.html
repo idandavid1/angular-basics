@@ -6,7 +6,6 @@
     </nav>
   </header>
   <section *ngIf="!isWatchPage" class="home">
-    <h1>welcome home</h1>
     <show-time></show-time>
     <count-down [countDown]="countDown" (due)="endCountDown()"></count-down>
     <show-coords></show-coords>
