@@ -1,10 +1,5 @@
 <section class="app">
-  <header>
-    <nav>
-      <span (click)="toggleWatchPage()" [class]="isWatchPage ? '' : 'active'">Home</span>
-      <span (click)="toggleWatchPage()" [class]="isWatchPage ? 'active' : ''">Watcher</span>
-    </nav>
-  </header>
+  <app-header [isWatchPage]="isWatchPage" (toggleWatchPage)="toggleWatchPage()"></app-header>
   <section *ngIf="!isWatchPage" class="home">
     <show-time></show-time>
     <count-down [countDown]="countDown" (due)="endCountDown()"></count-down>

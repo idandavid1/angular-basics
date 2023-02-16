@@ -1,1 +1,7 @@
-<p>app-header works!</p>
+<header>
+    <nav>
+      <span (click)="onToggleWatchPage()" [class]="isWatchPage ? '' : 'active'">Home</span>
+      <span (click)="onToggleWatchPage()" [class]="isWatchPage ? 'active' : ''">Watcher</span>
+    </nav>
+  </header>
+  
