@@ -10,10 +10,14 @@ import { WhoWatchComponent } from '../cmps/who-watch/who-watch.component';
 import { WhoWatchListComponent } from '../cmps/who-watch-list/who-watch-list.component';
 import { WhoWatchPreviewComponent } from '../cmps/who-watch-preview/who-watch-preview.component';
 import { WhoWatchDetailsComponent } from '../cmps/who-watch-details/who-watch-details.component';
+import { HomePageComponent } from '../pages/home-page/home-page.component';
+import { AppHeaderComponent } from '../cmps/app-header/app-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomePageComponent,
+    AppHeaderComponent,
     ShowTimeComponent,
     CountDownComponent,
     ShowCoordsComponent,
